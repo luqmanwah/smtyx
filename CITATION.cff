@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use SMTYX in research or software, please cite this project."
+title: "SMTYX: Semantic Language and Protocol for Intelligent Systems"
+type: software
+authors:
+  - name: "Luqmanwah"
+version: 0.2.0
+date-released: 2026-09-03
+license: Apache-2.0
+repository-code: "https://github.com/luqmanwah/smtyx"
+url: "https://smtyx.io"
+abstract: "A model-agnostic semantic state, task, capability, and interoperability protocol for AI systems."

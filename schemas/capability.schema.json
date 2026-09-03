@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SMTYX Capability Advertisement v0.2",
+  "type": "object",
+  "required": ["agent_id", "intents", "objects"],
+  "properties": {
+    "agent_id": {"type": "string", "minLength": 1},
+    "intents": {"type": "array", "items": {"type": "string"}},
+    "objects": {"type": "array", "items": {"type": "string"}},
+    "tools": {"type": "array", "items": {"type": "string"}},
+    "locality": {"enum": ["local", "cloud", "any"]},
+    "reliability": {"type": "number", "minimum": 0, "maximum": 1},
+    "latency_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "cost_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "metadata": {"type": "object"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,213 @@
+{
+  "version": "0.1",
+  "policy": {
+    "policy_version": "0.1",
+    "allowed_actions": [
+      "READ",
+      "WRITE",
+      "SEARCH",
+      "FIND",
+      "OPEN",
+      "CLOSE",
+      "CREATE",
+      "DELETE",
+      "UPDATE",
+      "EDIT",
+      "FIX",
+      "CHECK",
+      "VERIFY",
+      "VALIDATE",
+      "CALCULATE",
+      "COMPARE",
+      "ANALYZE",
+      "EXTRACT",
+      "CONVERT",
+      "MERGE",
+      "SPLIT",
+      "COPY",
+      "MOVE",
+      "SAVE",
+      "LOAD",
+      "RUN",
+      "STOP",
+      "PAUSE",
+      "RESUME",
+      "RETRY",
+      "START",
+      "FINISH",
+      "WAIT",
+      "SEND",
+      "RECEIVE",
+      "RETURN",
+      "CALL",
+      "ROUTE",
+      "SELECT",
+      "REJECT",
+      "ACCEPT",
+      "ENABLE",
+      "DISABLE",
+      "LOCK",
+      "UNLOCK",
+      "CONNECT",
+      "DISCONNECT",
+      "SYNC",
+      "MONITOR",
+      "REPORT"
+    ],
+    "blocked_actions": [],
+    "confirm_required_actions": [
+      "DELETE",
+      "MOVE",
+      "COPY",
+      "SAVE",
+      "WRITE",
+      "UPDATE",
+      "CREATE"
+    ],
+    "max_actions_per_instruction": 6,
+    "allow_structural_input": true,
+    "require_end_by_default": false
+  },
+  "language_objects": [
+    "PYTHON",
+    "JAVASCRIPT",
+    "TYPESCRIPT",
+    "JAVA",
+    "CSHARP",
+    "CPP",
+    "GO",
+    "RUST",
+    "PHP",
+    "SQL",
+    "R",
+    "KOTLIN",
+    "SWIFT",
+    "RUBY"
+  ],
+  "tool_rules": [
+    {
+      "id": "open_notepad",
+      "name": "powershell_notepad",
+      "priority": 110,
+      "match": {
+        "raw_contains": [
+          "NOTEPAD",
+          "NOTE PAD",
+          "NOTES"
+        ],
+        "actions": ["OPEN", "RUN"]
+      },
+      "tool": {
+        "name": "powershell",
+        "command": "Start-Process notepad"
+      },
+      "requires_confirmation": true,
+      "execution_mode": "deferred",
+      "description": "Open Windows Notepad through a constrained tool adapter."
+    },
+    {
+      "id": "run_language_code",
+      "name": "runtime_sandbox",
+      "priority": 100,
+      "match": {
+        "actions": ["RUN", "CHECK"],
+        "objects": [
+          "PYTHON",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "JAVA",
+          "CSHARP",
+          "CPP",
+          "GO",
+          "RUST",
+          "PHP",
+          "SQL",
+          "R",
+          "KOTLIN",
+          "SWIFT",
+          "RUBY"
+        ]
+      },
+      "tool": {
+        "name": "runtime_sandbox",
+        "command": "run_language_job"
+      },
+      "requires_confirmation": false,
+      "execution_mode": "deferred",
+      "description": "Run language/job level commands in a controlled runtime adapter."
+    },
+    {
+      "id": "list_path_or_file",
+      "name": "file_ops",
+      "priority": 103,
+      "match": {
+        "raw_contains": [
+          "BACA",
+          "READ",
+          "FILE",
+          "FOLDER",
+          "DIRECTORY"
+        ],
+        "raw_regex": [
+          "[A-Za-z]:\\\\",
+          "\\\\[^\\s]+"
+        ],
+        "actions": ["READ", "OPEN"],
+        "objects": ["FILE"]
+      },
+      "tool": {
+        "name": "analysis_agent",
+        "command": "list_path"
+      },
+      "requires_confirmation": false,
+      "execution_mode": "deferred",
+      "description": "Read/list file-system path intent in a constrained adapter path."
+    },
+    {
+      "id": "analyze_language_code",
+      "name": "analysis_agent",
+      "priority": 95,
+      "match": {
+        "actions": ["ANALYZE", "FIX", "VERIFY", "VALIDATE", "COMPARE", "CONVERT", "REPORT"],
+        "objects": [
+          "PYTHON",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "JAVA",
+          "CSHARP",
+          "CPP",
+          "GO",
+          "RUST",
+          "PHP",
+          "SQL",
+          "R",
+          "KOTLIN",
+          "SWIFT",
+          "RUBY"
+        ]
+      },
+      "tool": {
+        "name": "analysis_agent",
+        "command": "analyze_or_fix"
+      },
+      "requires_confirmation": false,
+      "execution_mode": "deferred",
+      "description": "Delegate complex reasoning/analysis tasks to a specialized tool chain."
+    },
+    {
+      "id": "delegate_llm_chain",
+      "name": "llm_bridge",
+      "priority": 80,
+      "match": {
+        "actions": ["SEARCH", "REPORT", "SEND", "RECEIVE", "ROUTE", "SYNC", "MONITOR"]
+      },
+      "tool": {
+        "name": "llm_agent",
+        "command": "delegate_to_llm"
+      },
+      "requires_confirmation": false,
+      "execution_mode": "deferred",
+      "description": "Fallback bridge routing for chain-of-tools and LLM delegation."
+    }
+  ]
+}

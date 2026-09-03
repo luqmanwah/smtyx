@@ -1,0 +1,12 @@
+{
+  "name": "SMTYX",
+  "title": "Semantic Language and Protocol for Intelligent Systems",
+  "protocol_version": "0.2",
+  "sdk_version": "0.2.0",
+  "creator": "Luqmanwah",
+  "copyright": "Copyright 2026 Luqmanwah",
+  "license": "Apache-2.0",
+  "status": "alpha",
+  "vendor_neutral": true,
+  "website": "https://smtyx.io"
+}

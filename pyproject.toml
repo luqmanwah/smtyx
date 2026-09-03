@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smtyx"
+version = "0.2.0"
+description = "Semantic Language and Protocol for Intelligent Systems"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Luqmanwah" }]
+keywords = ["ai", "protocol", "semantic", "agents", "orchestration", "interoperability"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://smtyx.io"
+Repository = "https://github.com/luqmanwah/smtyx"
+Issues = "https://github.com/luqmanwah/smtyx/issues"
+
+[tool.setuptools.packages.find]
+include = ["smtyx*"]

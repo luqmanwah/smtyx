@@ -1,0 +1,694 @@
+[
+  {
+    "id": "001",
+    "name": "READ",
+    "primary_class": "ACTION",
+    "description": "Read human or machine-readable material."
+  },
+  {
+    "id": "002",
+    "name": "WRITE",
+    "primary_class": "ACTION",
+    "description": "Create new textual content."
+  },
+  {
+    "id": "003",
+    "name": "SEARCH",
+    "primary_class": "ACTION",
+    "description": "Find matches in an object/source."
+  },
+  {
+    "id": "004",
+    "name": "FIND",
+    "primary_class": "ACTION",
+    "description": "Locate a specific item or segment."
+  },
+  {
+    "id": "005",
+    "name": "OPEN",
+    "primary_class": "ACTION",
+    "description": "Open a target resource."
+  },
+  {
+    "id": "006",
+    "name": "CLOSE",
+    "primary_class": "ACTION",
+    "description": "Close an active resource/session."
+  },
+  {
+    "id": "007",
+    "name": "CREATE",
+    "primary_class": "ACTION",
+    "description": "Create a new resource/entity."
+  },
+  {
+    "id": "008",
+    "name": "DELETE",
+    "primary_class": "ACTION",
+    "description": "Delete a resource/entity."
+  },
+  {
+    "id": "009",
+    "name": "UPDATE",
+    "primary_class": "ACTION",
+    "description": "Apply updates to a target."
+  },
+  {
+    "id": "010",
+    "name": "EDIT",
+    "primary_class": "ACTION",
+    "description": "Modify existing material."
+  },
+  {
+    "id": "011",
+    "name": "FIX",
+    "primary_class": "ACTION",
+    "description": "Repair an issue or inconsistency."
+  },
+  {
+    "id": "012",
+    "name": "CHECK",
+    "primary_class": "ACTION",
+    "description": "Check for compliance or existence."
+  },
+  {
+    "id": "013",
+    "name": "VERIFY",
+    "primary_class": "ACTION",
+    "description": "Validate correctness by verification."
+  },
+  {
+    "id": "014",
+    "name": "VALIDATE",
+    "primary_class": "ACTION",
+    "description": "Run explicit validation checks."
+  },
+  {
+    "id": "015",
+    "name": "CALCULATE",
+    "primary_class": "ACTION",
+    "description": "Perform numeric/calculation operations."
+  },
+  {
+    "id": "016",
+    "name": "COMPARE",
+    "primary_class": "ACTION",
+    "description": "Compare two or more values/objects."
+  },
+  {
+    "id": "017",
+    "name": "ANALYZE",
+    "primary_class": "ACTION",
+    "description": "Analyze structure, meaning, or quality."
+  },
+  {
+    "id": "018",
+    "name": "EXTRACT",
+    "primary_class": "ACTION",
+    "description": "Extract parts from input content."
+  },
+  {
+    "id": "019",
+    "name": "CONVERT",
+    "primary_class": "ACTION",
+    "description": "Convert one format/type to another."
+  },
+  {
+    "id": "020",
+    "name": "MERGE",
+    "primary_class": "ACTION",
+    "description": "Combine multiple units."
+  },
+  {
+    "id": "021",
+    "name": "SPLIT",
+    "primary_class": "ACTION",
+    "description": "Split a unit into parts."
+  },
+  {
+    "id": "022",
+    "name": "COPY",
+    "primary_class": "ACTION",
+    "description": "Duplicate a resource."
+  },
+  {
+    "id": "023",
+    "name": "MOVE",
+    "primary_class": "ACTION",
+    "description": "Relocate a resource."
+  },
+  {
+    "id": "024",
+    "name": "SAVE",
+    "primary_class": "ACTION",
+    "description": "Persist the current state/content."
+  },
+  {
+    "id": "025",
+    "name": "LOAD",
+    "primary_class": "ACTION",
+    "description": "Load resource into active context."
+  },
+  {
+    "id": "026",
+    "name": "RUN",
+    "primary_class": "ACTION",
+    "description": "Execute an operation or process."
+  },
+  {
+    "id": "027",
+    "name": "STOP",
+    "primary_class": "CONTROL",
+    "secondary_class": "ACTION",
+    "description": "Stop execution or a running flow."
+  },
+  {
+    "id": "028",
+    "name": "PAUSE",
+    "primary_class": "CONTROL",
+    "secondary_class": "ACTION",
+    "description": "Pause execution temporarily."
+  },
+  {
+    "id": "029",
+    "name": "RESUME",
+    "primary_class": "CONTROL",
+    "secondary_class": "ACTION",
+    "description": "Resume paused execution."
+  },
+  {
+    "id": "030",
+    "name": "RETRY",
+    "primary_class": "CONTROL",
+    "secondary_class": "ACTION",
+    "description": "Retry a previous failed step."
+  },
+  {
+    "id": "031",
+    "name": "START",
+    "primary_class": "CONTROL",
+    "secondary_class": "ACTION",
+    "description": "Start an execution flow."
+  },
+  {
+    "id": "032",
+    "name": "FINISH",
+    "primary_class": "CONTROL",
+    "secondary_class": "ACTION",
+    "description": "Finish current flow cleanly."
+  },
+  {
+    "id": "033",
+    "name": "WAIT",
+    "primary_class": "CONTROL",
+    "description": "Await event, input, or condition."
+  },
+  {
+    "id": "034",
+    "name": "SEND",
+    "primary_class": "ACTION",
+    "description": "Send output to a destination."
+  },
+  {
+    "id": "035",
+    "name": "RECEIVE",
+    "primary_class": "ACTION",
+    "description": "Receive output from a source."
+  },
+  {
+    "id": "036",
+    "name": "RETURN",
+    "primary_class": "ACTION",
+    "description": "Return result or payload."
+  },
+  {
+    "id": "037",
+    "name": "CALL",
+    "primary_class": "ACTION",
+    "description": "Call a tool, service, or model."
+  },
+  {
+    "id": "038",
+    "name": "ROUTE",
+    "primary_class": "ACTION",
+    "description": "Route request/path to destination."
+  },
+  {
+    "id": "039",
+    "name": "SELECT",
+    "primary_class": "ACTION",
+    "description": "Select candidate(s) from alternatives."
+  },
+  {
+    "id": "040",
+    "name": "REJECT",
+    "primary_class": "ACTION",
+    "description": "Reject an item or decision."
+  },
+  {
+    "id": "041",
+    "name": "ACCEPT",
+    "primary_class": "ACTION",
+    "description": "Accept an item or decision."
+  },
+  {
+    "id": "042",
+    "name": "ENABLE",
+    "primary_class": "ACTION",
+    "description": "Enable feature/capability."
+  },
+  {
+    "id": "043",
+    "name": "DISABLE",
+    "primary_class": "ACTION",
+    "description": "Disable feature/capability."
+  },
+  {
+    "id": "044",
+    "name": "LOCK",
+    "primary_class": "ACTION",
+    "description": "Apply lock/ownership."
+  },
+  {
+    "id": "045",
+    "name": "UNLOCK",
+    "primary_class": "ACTION",
+    "description": "Release lock/ownership."
+  },
+  {
+    "id": "046",
+    "name": "CONNECT",
+    "primary_class": "ACTION",
+    "description": "Establish connection."
+  },
+  {
+    "id": "047",
+    "name": "DISCONNECT",
+    "primary_class": "ACTION",
+    "description": "Close connection."
+  },
+  {
+    "id": "048",
+    "name": "SYNC",
+    "primary_class": "ACTION",
+    "description": "Synchronize states/data between systems."
+  },
+  {
+    "id": "049",
+    "name": "MONITOR",
+    "primary_class": "ACTION",
+    "description": "Monitor progress, state, or events."
+  },
+  {
+    "id": "050",
+    "name": "REPORT",
+    "primary_class": "ACTION",
+    "description": "Report findings or status."
+  },
+  {
+    "id": "051",
+    "name": "TEXT",
+    "primary_class": "OBJECT",
+    "description": "Raw text content."
+  },
+  {
+    "id": "052",
+    "name": "IMAGE",
+    "primary_class": "OBJECT",
+    "description": "Image content."
+  },
+  {
+    "id": "053",
+    "name": "AUDIO",
+    "primary_class": "OBJECT",
+    "description": "Audio content."
+  },
+  {
+    "id": "054",
+    "name": "VIDEO",
+    "primary_class": "OBJECT",
+    "description": "Video content."
+  },
+  {
+    "id": "055",
+    "name": "FILE",
+    "primary_class": "OBJECT",
+    "description": "File resource."
+  },
+  {
+    "id": "056",
+    "name": "PDF",
+    "primary_class": "OBJECT",
+    "description": "PDF document format."
+  },
+  {
+    "id": "057",
+    "name": "DOCUMENT",
+    "primary_class": "OBJECT",
+    "description": "General document object."
+  },
+  {
+    "id": "058",
+    "name": "CODE",
+    "primary_class": "OBJECT",
+    "description": "Code artefact."
+  },
+  {
+    "id": "059",
+    "name": "DATA",
+    "primary_class": "OBJECT",
+    "description": "Data object/resource."
+  },
+  {
+    "id": "060",
+    "name": "DATABASE",
+    "primary_class": "OBJECT",
+    "description": "Database object/resource."
+  },
+  {
+    "id": "061",
+    "name": "WEB",
+    "primary_class": "OBJECT",
+    "description": "Web or URL target."
+  },
+  {
+    "id": "062",
+    "name": "TOOL",
+    "primary_class": "OBJECT",
+    "description": "Tool reference."
+  },
+  {
+    "id": "063",
+    "name": "MODEL",
+    "primary_class": "OBJECT",
+    "description": "LLM/model reference."
+  },
+  {
+    "id": "064",
+    "name": "MEMORY",
+    "primary_class": "OBJECT",
+    "description": "Working/model memory store."
+  },
+  {
+    "id": "065",
+    "name": "STATE",
+    "primary_class": "META",
+    "description": "Reference token for state contexts."
+  },
+  {
+    "id": "066",
+    "name": "USER",
+    "primary_class": "OBJECT",
+    "description": "User actor/entity."
+  },
+  {
+    "id": "067",
+    "name": "SYSTEM",
+    "primary_class": "OBJECT",
+    "description": "System actor/entity."
+  },
+  {
+    "id": "068",
+    "name": "AGENT",
+    "primary_class": "OBJECT",
+    "description": "Agent actor/entity."
+  },
+  {
+    "id": "069",
+    "name": "CODEX",
+    "primary_class": "OBJECT",
+    "description": "Target/runtime actor for this project context."
+  },
+  {
+    "id": "070",
+    "name": "VISION",
+    "primary_class": "OBJECT",
+    "description": "Vision-capable modality."
+  },
+  {
+    "id": "071",
+    "name": "TRUE",
+    "primary_class": "META",
+    "description": "Boolean true indicator."
+  },
+  {
+    "id": "072",
+    "name": "FALSE",
+    "primary_class": "META",
+    "description": "Boolean false indicator."
+  },
+  {
+    "id": "073",
+    "name": "READY",
+    "primary_class": "STATE",
+    "description": "Ready state marker."
+  },
+  {
+    "id": "074",
+    "name": "ACTIVE",
+    "primary_class": "STATE",
+    "description": "Active state marker."
+  },
+  {
+    "id": "075",
+    "name": "IDLE",
+    "primary_class": "STATE",
+    "description": "Idle state marker."
+  },
+  {
+    "id": "076",
+    "name": "BUSY",
+    "primary_class": "STATE",
+    "description": "Busy state marker."
+  },
+  {
+    "id": "077",
+    "name": "DONE",
+    "primary_class": "STATE",
+    "description": "Completed state marker."
+  },
+  {
+    "id": "078",
+    "name": "FAILED",
+    "primary_class": "STATE",
+    "description": "Failed state marker."
+  },
+  {
+    "id": "079",
+    "name": "ERROR",
+    "primary_class": "STATE",
+    "description": "Error state marker."
+  },
+  {
+    "id": "080",
+    "name": "WARNING",
+    "primary_class": "STATE",
+    "description": "Warning state marker."
+  },
+  {
+    "id": "081",
+    "name": "UNKNOWN",
+    "primary_class": "STATE",
+    "description": "Unknown/undetermined state."
+  },
+  {
+    "id": "082",
+    "name": "FOUND",
+    "primary_class": "STATE",
+    "description": "Found state marker."
+  },
+  {
+    "id": "083",
+    "name": "MISSING",
+    "primary_class": "STATE",
+    "description": "Missing-state marker."
+  },
+  {
+    "id": "084",
+    "name": "VALID",
+    "primary_class": "STATE",
+    "description": "Validation success marker."
+  },
+  {
+    "id": "085",
+    "name": "INVALID",
+    "primary_class": "STATE",
+    "description": "Validation failure marker."
+  },
+  {
+    "id": "086",
+    "name": "SAFE",
+    "primary_class": "META",
+    "description": "Safety marker."
+  },
+  {
+    "id": "087",
+    "name": "UNSAFE",
+    "primary_class": "META",
+    "description": "Safety marker."
+  },
+  {
+    "id": "088",
+    "name": "HIGH",
+    "primary_class": "META",
+    "description": "High priority marker."
+  },
+  {
+    "id": "089",
+    "name": "MEDIUM",
+    "primary_class": "META",
+    "description": "Medium priority marker."
+  },
+  {
+    "id": "090",
+    "name": "LOW",
+    "primary_class": "META",
+    "description": "Low priority marker."
+  },
+  {
+    "id": "091",
+    "name": "INPUT",
+    "primary_class": "OBJECT",
+    "description": "Input flow designation."
+  },
+  {
+    "id": "092",
+    "name": "OUTPUT",
+    "primary_class": "OBJECT",
+    "description": "Output flow designation."
+  },
+  {
+    "id": "093",
+    "name": "TARGET",
+    "primary_class": "OBJECT",
+    "description": "Target field marker."
+  },
+  {
+    "id": "094",
+    "name": "RESULT",
+    "primary_class": "STATE",
+    "description": "Result-oriented marker object/type."
+  },
+  {
+    "id": "095",
+    "name": "CONFIDENCE",
+    "primary_class": "META",
+    "description": "Confidence metadata marker."
+  },
+  {
+    "id": "096",
+    "name": "PRIORITY",
+    "primary_class": "META",
+    "description": "Priority metadata marker."
+  },
+  {
+    "id": "097",
+    "name": "URGENT",
+    "primary_class": "META",
+    "secondary_class": "HIGH",
+    "description": "Urgent priority marker."
+  },
+  {
+    "id": "098",
+    "name": "NEXT",
+    "primary_class": "CONTROL",
+    "description": "Move to next instruction/step."
+  },
+  {
+    "id": "099",
+    "name": "PREVIOUS",
+    "primary_class": "CONTROL",
+    "description": "Move to previous instruction/step."
+  },
+  {
+    "id": "100",
+    "name": "END",
+    "primary_class": "CONTROL",
+    "secondary_class": "STATE",
+    "description": "End of instruction sequence marker."
+  },
+  {
+    "id": "101",
+    "name": "PYTHON",
+    "primary_class": "OBJECT",
+    "description": "Python programming language."
+  },
+  {
+    "id": "102",
+    "name": "JAVASCRIPT",
+    "primary_class": "OBJECT",
+    "description": "JavaScript programming language."
+  },
+  {
+    "id": "103",
+    "name": "TYPESCRIPT",
+    "primary_class": "OBJECT",
+    "description": "TypeScript programming language."
+  },
+  {
+    "id": "104",
+    "name": "JAVA",
+    "primary_class": "OBJECT",
+    "description": "Java programming language."
+  },
+  {
+    "id": "105",
+    "name": "CSHARP",
+    "primary_class": "OBJECT",
+    "description": "C# programming language."
+  },
+  {
+    "id": "106",
+    "name": "CPP",
+    "primary_class": "OBJECT",
+    "description": "C++ programming language."
+  },
+  {
+    "id": "107",
+    "name": "GO",
+    "primary_class": "OBJECT",
+    "description": "Go programming language."
+  },
+  {
+    "id": "108",
+    "name": "RUST",
+    "primary_class": "OBJECT",
+    "description": "Rust programming language."
+  },
+  {
+    "id": "109",
+    "name": "PHP",
+    "primary_class": "OBJECT",
+    "description": "PHP programming language."
+  },
+  {
+    "id": "110",
+    "name": "SQL",
+    "primary_class": "OBJECT",
+    "description": "Structured Query Language."
+  },
+  {
+    "id": "111",
+    "name": "R",
+    "primary_class": "OBJECT",
+    "description": "R programming language."
+  },
+  {
+    "id": "112",
+    "name": "KOTLIN",
+    "primary_class": "OBJECT",
+    "description": "Kotlin programming language."
+  },
+  {
+    "id": "113",
+    "name": "SWIFT",
+    "primary_class": "OBJECT",
+    "description": "Swift programming language."
+  },
+  {
+    "id": "114",
+    "name": "RUBY",
+    "primary_class": "OBJECT",
+    "description": "Ruby programming language."
+  }
+]

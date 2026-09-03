@@ -1,0 +1,19 @@
+{
+  "cloud_request": {
+    "intent": "EDIT",
+    "object": "DOCUMENT",
+    "permissions": ["document.write"],
+    "payload": {
+      "operation": "replace_heading_text",
+      "target_ref": "document://heading/4.2",
+      "new_text": "4.2 Rencana Pengelolaan Lingkungan"
+    }
+  },
+  "local_runtime_rule": "Validate permission and target locally before applying the operation.",
+  "result_contract": {
+    "status": "VERIFIED",
+    "evidence": [
+      {"ref": "document://heading/4.2", "note": "post-execution state"}
+    ]
+  }
+}

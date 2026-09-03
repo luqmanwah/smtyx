@@ -1,0 +1,20 @@
+{"case_id": "C001", "state": {"intent": "ANALYZE", "object": "DOCUMENT", "status": "PARSED", "confidence": 0.9, "permissions": ["document.read"], "payload": {}}, "decision": "oracle"}
+{"case_id": "C002", "state": {"intent": "DELETE", "object": "FILE", "status": "DENIED", "confidence": 0.9, "permissions": ["file.delete"], "payload": {}}, "decision": "oracle"}
+{"case_id": "C003", "state": {"intent": "VERIFY", "object": "CLAIM", "status": "CONFLICT", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C004", "state": {"intent": "EXTRACT", "object": "VALUE", "status": "AMBIGUOUS", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C005", "state": {"intent": "VERIFY", "object": "ARTIFACT", "status": "VERIFIED", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C006", "state": {"intent": "OPEN", "object": "APPLICATION", "status": "PARSED", "confidence": 0.9, "permissions": ["local.app.open"], "payload": {}}, "decision": "oracle"}
+{"case_id": "C007", "state": {"intent": "REPORT", "object": "RESULT", "status": "FINAL", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C008", "state": {"intent": "VERIFY", "object": "CLAIM", "status": "PARSED", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C009", "state": {"intent": "VERIFY", "object": "STATE", "status": "STALE", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C010", "state": {"intent": "EDIT", "object": "DOCUMENT", "status": "DENIED", "confidence": 0.9, "permissions": ["document.write"], "payload": {}}, "decision": "oracle"}
+{"case_id": "C011", "state": {"intent": "LEARN", "object": "PROCEDURE", "status": "PROPOSED", "confidence": 0.9, "permissions": [], "payload": {"learning_stage": "OBSERVATION"}}, "decision": "oracle"}
+{"case_id": "C012", "state": {"intent": "LEARN", "object": "PROCEDURE", "status": "VERIFIED", "confidence": 0.9, "permissions": [], "payload": {"learning_stage": "VERIFIED"}}, "decision": "oracle"}
+{"case_id": "C013", "state": {"intent": "PLAN", "object": "TASK_GRAPH", "status": "PARSED", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C014", "state": {"intent": "EDIT", "object": "FILE", "status": "AMBIGUOUS", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C015", "state": {"intent": "VERIFY", "object": "EXECUTION_RESULT", "status": "VERIFIED", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C016", "state": {"intent": "EXECUTE", "object": "EXTERNAL_INSTRUCTION", "status": "DENIED", "confidence": 0.9, "permissions": ["secret.export"], "payload": {}}, "decision": "oracle"}
+{"case_id": "C017", "state": {"intent": "COMPARE", "object": "DOCUMENT", "status": "PARSED", "confidence": 0.9, "permissions": ["document.read"], "payload": {}}, "decision": "oracle"}
+{"case_id": "C018", "state": {"intent": "VERIFY", "object": "LIVE_DATA", "status": "STALE", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C019", "state": {"intent": "VERIFY", "object": "CLAIM", "status": "VERIFIED", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}
+{"case_id": "C020", "state": {"intent": "EXECUTE", "object": "TASK", "status": "FAILED", "confidence": 0.9, "permissions": [], "payload": {}}, "decision": "oracle"}

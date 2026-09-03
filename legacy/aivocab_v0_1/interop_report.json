@@ -1,0 +1,535 @@
+{
+  "status": "PASS",
+  "total_failed": 0,
+  "cases_count": 1,
+  "cases_run": 1,
+  "max_failures": null,
+  "strict": false,
+  "case_filters": {
+    "include": [],
+    "exclude": []
+  },
+  "format": "json",
+  "scenarios": [
+    {
+      "label": "CLI input 1",
+      "input_type": "str"
+    }
+  ],
+  "records": [
+    {
+      "case_id": 1,
+      "stage": "AI_A route",
+      "label": "CLI input 1",
+      "ok": true,
+      "detail": "mode=assistant, status=FINAL, protocol=TS/0.1, requires_confirmation=False, ack=5",
+      "expected_mode": null,
+      "expected_status": null,
+      "expected_confirmation": null,
+      "strict_issue": null,
+      "hop": "A",
+      "input": "hitung satu tambah satu",
+      "route": {
+        "mode": "assistant",
+        "answer": "2",
+        "tool_calls": [],
+        "canonical": {
+          "version": "0.1",
+          "actions": [
+            "CALCULATE"
+          ],
+          "object": "DATA",
+          "target": null,
+          "state": null,
+          "priority": null,
+          "confidence": null,
+          "destination": null,
+          "end": true,
+          "errors": []
+        },
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "warnings": []
+        },
+        "symbolic": "CALCULATE DATA END",
+        "numeric": "015 059 100",
+        "input_mode": "math",
+        "embedding": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0625,
+          0.0
+        ],
+        "semantic_state": {
+          "version": "0.1",
+          "actions": [
+            "CALCULATE"
+          ],
+          "object": "DATA",
+          "target": null,
+          "state": null,
+          "priority": null,
+          "confidence": null,
+          "destination": null,
+          "end": true,
+          "errors": [],
+          "protocol_version": "TS/0.1",
+          "vocab_version": "VA/0.1",
+          "state_id": "st_8451d1ccf381d3a53279",
+          "parent_state_id": null,
+          "timestamp": "2026-09-02T13:43:08.500037+00:00",
+          "identity_id": "default",
+          "source": {
+            "kind": "math",
+            "id": "user_input",
+            "adapter": "bridge"
+          },
+          "status": "FINAL",
+          "evidence": [],
+          "required_actions": [
+            "CALCULATE"
+          ],
+          "risk": "LOW",
+          "permissions": [
+            "workspace.read"
+          ],
+          "provenance": [
+            {
+              "ts": "2026-09-02T13:43:08.500028+00:00",
+              "source": {
+                "kind": "math",
+                "id": "user_input",
+                "adapter": "bridge"
+              },
+              "canonical_version": "0.1",
+              "input_digest": "1bfd22fe8fade0e5c78ae515cc0fe9c1b3c8edec"
+            }
+          ],
+          "ack": [
+            "ACK_RECEIVED",
+            "ACK_PARSED",
+            "ACK_SEMANTIC",
+            "ACK_VERIFIED",
+            "ACK_FINAL"
+          ]
+        },
+        "ack": [
+          "ACK_RECEIVED",
+          "ACK_PARSED",
+          "ACK_SEMANTIC",
+          "ACK_VERIFIED",
+          "ACK_FINAL"
+        ],
+        "protocol_version": "TS/0.1"
+      }
+    },
+    {
+      "case_id": 1,
+      "stage": "AI_B route via symbolic",
+      "label": "CLI input 1",
+      "ok": true,
+      "detail": "mode=assistant, status=FINAL, protocol=TS/0.1, requires_confirmation=False, ack=5 | payload=symbolic",
+      "expected_mode": null,
+      "expected_status": null,
+      "expected_confirmation": null,
+      "strict_issue": null,
+      "hop": "B-symbolic",
+      "input": "CALCULATE DATA END",
+      "route": {
+        "mode": "assistant",
+        "answer": "Permintaan dipahami, tetapi tidak memerlukan eksekusi alat tambahan.",
+        "tool_calls": [],
+        "canonical": {
+          "version": "0.1",
+          "actions": [
+            "CALCULATE"
+          ],
+          "object": "DATA",
+          "target": null,
+          "state": null,
+          "priority": null,
+          "confidence": null,
+          "destination": null,
+          "end": true,
+          "errors": []
+        },
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "warnings": []
+        },
+        "symbolic": "CALCULATE DATA END",
+        "numeric": "015 059 100",
+        "input_mode": "symbolic_or_numeric",
+        "embedding": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0625,
+          0.0
+        ],
+        "semantic_state": {
+          "version": "0.1",
+          "actions": [
+            "CALCULATE"
+          ],
+          "object": "DATA",
+          "target": null,
+          "state": null,
+          "priority": null,
+          "confidence": null,
+          "destination": null,
+          "end": true,
+          "errors": [],
+          "protocol_version": "TS/0.1",
+          "vocab_version": "VA/0.1",
+          "state_id": "st_f1c6e51cf71f0ce59e51",
+          "parent_state_id": null,
+          "timestamp": "2026-09-02T13:43:08.501667+00:00",
+          "identity_id": "default",
+          "source": {
+            "kind": "symbolic",
+            "id": "user_input",
+            "adapter": "bridge"
+          },
+          "status": "FINAL",
+          "evidence": [],
+          "required_actions": [
+            "CALCULATE"
+          ],
+          "risk": "LOW",
+          "permissions": [
+            "workspace.read"
+          ],
+          "provenance": [
+            {
+              "ts": "2026-09-02T13:43:08.501659+00:00",
+              "source": {
+                "kind": "symbolic",
+                "id": "user_input",
+                "adapter": "bridge"
+              },
+              "canonical_version": "0.1",
+              "input_digest": "9ca14a59d2f9bccc3588276e2c395f538f72223c"
+            }
+          ],
+          "ack": [
+            "ACK_RECEIVED",
+            "ACK_PARSED",
+            "ACK_SEMANTIC",
+            "ACK_VERIFIED",
+            "ACK_FINAL"
+          ]
+        },
+        "ack": [
+          "ACK_RECEIVED",
+          "ACK_PARSED",
+          "ACK_SEMANTIC",
+          "ACK_VERIFIED",
+          "ACK_FINAL"
+        ],
+        "protocol_version": "TS/0.1"
+      }
+    },
+    {
+      "case_id": 1,
+      "stage": "AI_B route via canonical",
+      "label": "CLI input 1",
+      "ok": true,
+      "detail": "mode=assistant, status=FINAL, protocol=TS/0.1, requires_confirmation=False, ack=5 | payload=canonical",
+      "expected_mode": null,
+      "expected_status": null,
+      "expected_confirmation": null,
+      "strict_issue": null,
+      "hop": "B-canonical",
+      "input": {
+        "version": "0.1",
+        "actions": [
+          "CALCULATE"
+        ],
+        "object": "DATA",
+        "target": null,
+        "state": null,
+        "priority": null,
+        "confidence": null,
+        "destination": null,
+        "end": true,
+        "errors": []
+      },
+      "route": {
+        "mode": "assistant",
+        "answer": "Permintaan dipahami, tetapi tidak memerlukan eksekusi alat tambahan.",
+        "tool_calls": [],
+        "canonical": {
+          "version": "0.1",
+          "actions": [
+            "CALCULATE"
+          ],
+          "object": "DATA",
+          "target": null,
+          "state": null,
+          "priority": null,
+          "confidence": null,
+          "destination": null,
+          "end": true,
+          "errors": []
+        },
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "warnings": []
+        },
+        "symbolic": "CALCULATE DATA END",
+        "numeric": "015 059 100",
+        "input_mode": "canonical_dict",
+        "embedding": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0625,
+          0.0
+        ],
+        "semantic_state": {
+          "version": "0.1",
+          "actions": [
+            "CALCULATE"
+          ],
+          "object": "DATA",
+          "target": null,
+          "state": null,
+          "priority": null,
+          "confidence": null,
+          "destination": null,
+          "end": true,
+          "errors": [],
+          "protocol_version": "TS/0.1",
+          "vocab_version": "VA/0.1",
+          "state_id": "st_201c7f95a40a49228596",
+          "parent_state_id": null,
+          "timestamp": "2026-09-02T13:43:08.502569+00:00",
+          "identity_id": "default",
+          "source": {
+            "kind": "canonical",
+            "id": "user_input",
+            "adapter": "bridge"
+          },
+          "status": "FINAL",
+          "evidence": [],
+          "required_actions": [
+            "CALCULATE"
+          ],
+          "risk": "LOW",
+          "permissions": [
+            "workspace.read"
+          ],
+          "provenance": [
+            {
+              "ts": "2026-09-02T13:43:08.502563+00:00",
+              "source": {
+                "kind": "canonical",
+                "id": "user_input",
+                "adapter": "bridge"
+              },
+              "canonical_version": "0.1",
+              "input_digest": "aa9eb0b40e0c337aaa39fab587213c81a88eb8d6"
+            }
+          ],
+          "ack": [
+            "ACK_RECEIVED",
+            "ACK_PARSED",
+            "ACK_SEMANTIC",
+            "ACK_VERIFIED",
+            "ACK_FINAL"
+          ]
+        },
+        "ack": [
+          "ACK_RECEIVED",
+          "ACK_PARSED",
+          "ACK_SEMANTIC",
+          "ACK_VERIFIED",
+          "ACK_FINAL"
+        ],
+        "protocol_version": "TS/0.1"
+      }
+    }
+  ]
+}
