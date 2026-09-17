@@ -1,0 +1,14 @@
+{
+  "format": "SMTYX-REGISTRY",
+  "version": 1,
+  "namespace": "local",
+  "revision": 1,
+  "entries": {
+    "FILE:37": {
+      "class": "FILE",
+      "index": "37",
+      "target": "F:\\SMITYX\\tests\\fixtures\\SMTYX_Design_Freeze_Chat_2026-09-17.md",
+      "sha256": "9fa2af4575cc33ea50218dd76ff5126868b0b9a59ed892fcdebd53f9545f5f45"
+    }
+  }
+}

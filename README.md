@@ -1,5 +1,10 @@
 # SMTYX
 
+> **Frozen byte-matrix runtime 0.2.0:** [source, exact reconstruction, and tests](runtimes/byte-matrix-0.2.0/).
+> This separately runnable component adds SMALL fingerprints, LARGE hierarchy, and
+> lossless `.smtyx` file reconstruction. See the [runtime guide](runtimes/README.md).
+> The semantic protocol/reference SDK below remains unchanged.
+
 **Semantic Language and Protocol for Intelligent Systems**
 
 SMTYX is an open, model-agnostic semantic language, protocol, and reference SDK for exchanging **meaning,

@@ -1,0 +1,13 @@
+SMTYX
+
+Originator / initial designer: @luqmanwah
+Design source: SMTYX Design Freeze, 17 September 2026, and its SMALL/LARGE addendum.
+Conversation reference: 6a99b94e-9758-83ec-8246-c2290888ad53 (Jumlah Ekstensi Dunia).
+
+This local Python implementation documents and implements raw-byte cluster
+fingerprints, positional-moment hierarchy metadata, and route registry snapshots.
+The implementation is distributed under the Apache License, Version 2.0.
+Version 0.2.0 adds an explicit ordered-cluster and ternary-discriminator exact
+profile, preserving the original reducer, signatures, and design attribution.
+The attached design-freeze remains attributed to @luqmanwah and retains its
+working-research status. Existing smtyx-prime reference materials are preserved.

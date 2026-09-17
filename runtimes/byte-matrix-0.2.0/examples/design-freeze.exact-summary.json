@@ -1,0 +1,66 @@
+{
+  "format": "SMTYX-EXACT",
+  "version": 2,
+  "profile": "cluster-ternary-msb-v1",
+  "mode": "LARGE",
+  "source": {
+    "name": "SMTYX_Design_Freeze_Chat_2026-09-17.md",
+    "size_bytes": "19794",
+    "sha256": "9fa2af4575cc33ea50218dd76ff5126868b0b9a59ed892fcdebd53f9545f5f45"
+  },
+  "small": {
+    "fingerprint": [
+      "19794",
+      "236147"
+    ],
+    "histogram": [
+      "0",
+      "0",
+      "0",
+      "1495",
+      "2100",
+      "503",
+      "292",
+      "1308",
+      "69",
+      "416",
+      "278",
+      "1140",
+      "1035",
+      "3377",
+      "2607",
+      "5174"
+    ]
+  },
+  "layout": {
+    "blocks_per_page": 32,
+    "micro_bytes": 32,
+    "micros_per_block": 4
+  },
+  "node_counts": {
+    "BLOCK": 155,
+    "DOC": 1,
+    "MICRO": 619,
+    "PAGE": 5
+  },
+  "root_signature": [
+    "19794",
+    "1652792",
+    "16462431679",
+    "220036759485589",
+    "3302292262678241467"
+  ],
+  "route": null,
+  "provenance": {
+    "design_reference": "chatgpt:6a99b94e-9758-83ec-8246-c2290888ad53",
+    "freeze_date": "2026-09-17",
+    "implementation": "smtyx-python/0.2.0",
+    "originator": "@luqmanwah"
+  },
+  "reconstruction": {
+    "metadata_only": false,
+    "raw_decode_supported": true,
+    "scheme": "ordered-cluster-masks-and-ternary-discriminator"
+  },
+  "validation": "all-records-moments-and-sha256-verified"
+}

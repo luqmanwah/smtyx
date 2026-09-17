@@ -1,0 +1,202 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 55,
+    "sha256": "d7fb2df3c22b25195e563f453abe6734636808b197e7f4aaaec293f16d342a2b"
+  },
+  {
+    "path": "AGENTS.md",
+    "bytes": 782,
+    "sha256": "35030afbb48e8a319e87634e49305506912c2512eeb0b2dfbe99217f88f3431e"
+  },
+  {
+    "path": "ARCHITECTURE.md",
+    "bytes": 9800,
+    "sha256": "01b33955d8f155806a701bf8c864585df63f17c39950985eecb4baa7e15a8646"
+  },
+  {
+    "path": "DESIGN_FREEZE_0.2.0.md",
+    "bytes": 7956,
+    "sha256": "0cd8907cbee0c3dc883f0ff284f415614d534c73228b0903e08e8ce36dbed00b"
+  },
+  {
+    "path": "examples/design-freeze.exact-summary.json",
+    "bytes": 1332,
+    "sha256": "ae0dd4db3f23dfc760c8c5044b6ae7f62e3036211ac399c6c7c8748648581c53"
+  },
+  {
+    "path": "examples/design-freeze.exact.smtyx",
+    "bytes": 36819,
+    "sha256": "cf979322b9cbd6d028739b5459a3a55164dbfa7e3c7f1455c0d529ab6b6a8d82"
+  },
+  {
+    "path": "examples/design-freeze.known.smtyx",
+    "bytes": 1204,
+    "sha256": "a52246b04815214fe17359955db64b31328fee3943424f9a26df18118b4ac162"
+  },
+  {
+    "path": "examples/design-freeze.large.smtyx",
+    "bytes": 213472,
+    "sha256": "116ccc34767a5175ec2e4f12ceba6f98f11e79a2b82b2741ae1286616b0a2a4b"
+  },
+  {
+    "path": "examples/design-freeze.metadata.json",
+    "bytes": 213472,
+    "sha256": "116ccc34767a5175ec2e4f12ceba6f98f11e79a2b82b2741ae1286616b0a2a4b"
+  },
+  {
+    "path": "examples/design-freeze.small.smtyx",
+    "bytes": 923,
+    "sha256": "bbb6769f808a5ee29f034a3e30ba87969cf0d557cc74489223c175a65fbc46be"
+  },
+  {
+    "path": "examples/README.md",
+    "bytes": 1095,
+    "sha256": "e425ed87dc69067894b31ebf4faf9bea83c4cb375b794e6d3cfe9d8fd5477648"
+  },
+  {
+    "path": "examples/registry.v1.json",
+    "bytes": 347,
+    "sha256": "b0da59bedde30574c1e0005e57e7977f04e8ba458a217525f79453ec8984ab99"
+  },
+  {
+    "path": "examples/registry.v2.json",
+    "bytes": 469,
+    "sha256": "c77fbd052eb7329a6c927c9c43f8d1c46f89a130ab28585071a695ff5d5e8b3d"
+  },
+  {
+    "path": "examples/VALIDATION_0.2.0.md",
+    "bytes": 5306,
+    "sha256": "2d7fea4e665cab9c35bd38fc625e9fb1e2b1b0c5903f3cc1600dfe2fba04d273"
+  },
+  {
+    "path": "examples/VALIDATION.md",
+    "bytes": 4316,
+    "sha256": "a80b82bb9a357d73658982ab0ab7e2f601fc71ff8c5d02e681d6c4f3c8098f52"
+  },
+  {
+    "path": "FORMAT_EXACT.md",
+    "bytes": 9808,
+    "sha256": "514eb1648e8a6916700591577e7945923ba0f6bd3fe2a482faa2d2877deb7d4f"
+  },
+  {
+    "path": "FORMAT.md",
+    "bytes": 9894,
+    "sha256": "4f237b5246caeb036de49ac05bdcd9f51a8a9fbe20039f19d78b42dae23eb89f"
+  },
+  {
+    "path": "LICENSE",
+    "bytes": 11324,
+    "sha256": "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"
+  },
+  {
+    "path": "NOTICE",
+    "bytes": 765,
+    "sha256": "705c66b9caf1dd34561753596479a660054adfb6d9c29a1d8af2a8bb0f0638b8"
+  },
+  {
+    "path": "PROVENANCE.md",
+    "bytes": 4469,
+    "sha256": "bb02d240067120041c58c8bc3c91edb7b37de756a7da0b2f305c479b7ac24346"
+  },
+  {
+    "path": "pyproject.toml",
+    "bytes": 446,
+    "sha256": "ae6e541dfcd3da68b6e174e1f70e3c83877a9dd99e5d1d28c3467fe07397b77d"
+  },
+  {
+    "path": "README.md",
+    "bytes": 8500,
+    "sha256": "9a04e2bbb237697d29004d81711b51e840614d27b8c4729c5faf6c0f42bdfc1c"
+  },
+  {
+    "path": "smtyx/__init__.py",
+    "bytes": 73,
+    "sha256": "6127f9b609a75900f16521a4ba924695bb04cdef0d03d7b2dc6e34f5e18cf39c"
+  },
+  {
+    "path": "smtyx/__main__.py",
+    "bytes": 6317,
+    "sha256": "b3a3eaad43d35e541b601c59e1c64350d02e8b3f20ea915d7c2aef989a8ad9bf"
+  },
+  {
+    "path": "smtyx/atomic.py",
+    "bytes": 699,
+    "sha256": "9b281bef6b2af072a499f92b5a482377ccb35e4a36bca741a44ae4b11957f416"
+  },
+  {
+    "path": "smtyx/core.py",
+    "bytes": 5479,
+    "sha256": "3009aeccc5941a19cd00a804f40fd921d9cbe39a5d9815c96c54443430781932"
+  },
+  {
+    "path": "smtyx/exact_math.py",
+    "bytes": 3927,
+    "sha256": "6e63f53cbb35fb6f3400eea95a338006081f8ebf47e9c6a4d717bad41b3727da"
+  },
+  {
+    "path": "smtyx/exact.py",
+    "bytes": 12250,
+    "sha256": "c8198c97aff0fd10523379e92a0473c94c18243155fddbf323dc771cdbaa636c"
+  },
+  {
+    "path": "smtyx/format.py",
+    "bytes": 8075,
+    "sha256": "3b609597052eccd68ea7a948d9c3e8547b7318fb9ded2f279f7309066ca966f5"
+  },
+  {
+    "path": "smtyx/registry.py",
+    "bytes": 3975,
+    "sha256": "d6eea205cdd862e873b1c67eae9bfa662e120fe49fb31fa0f9c4c431b17d16fc"
+  },
+  {
+    "path": "smtyx/storage.py",
+    "bytes": 1447,
+    "sha256": "ba9942808ecd44378fa301a08ed7b4d41cd80f9a0ae07380d5bb3426f74dac62"
+  },
+  {
+    "path": "smtyx/writer.py",
+    "bytes": 1707,
+    "sha256": "ef893485cda0b912e830f4aaee58c596097dcee6a09c870fa154fd9fe8234585"
+  },
+  {
+    "path": "SPEC.md",
+    "bytes": 11180,
+    "sha256": "b2c38aaf3bf46926547b25d493fdc5694544dae9006b4db8ddab330d2898a241"
+  },
+  {
+    "path": "tests/__init__.py",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "tests/fixtures/README.md",
+    "bytes": 812,
+    "sha256": "a02fc18eaa76029653c6a74006bf95f5ac6ceeff618cb8e685015df878787ba9"
+  },
+  {
+    "path": "tests/fixtures/SMTYX_Design_Freeze_Chat_2026-09-17.md",
+    "bytes": 19794,
+    "sha256": "9fa2af4575cc33ea50218dd76ff5126868b0b9a59ed892fcdebd53f9545f5f45"
+  },
+  {
+    "path": "tests/test_exact.py",
+    "bytes": 13942,
+    "sha256": "f76197de838192222e201d90b959dcdba2749f6f7e517aff2e9c150ec5be859f"
+  },
+  {
+    "path": "tests/test_runtime.py",
+    "bytes": 14404,
+    "sha256": "18f96c839e9f6f62b8da21c36d42a02bb5a820bcc791e3eb37245e9b755fd3ba"
+  },
+  {
+    "path": "tests/test_writer.py",
+    "bytes": 3968,
+    "sha256": "ac9d33ff10fe73c4fa1579ce3e97aa4a66f3fe542b3a6bff2575358181120bea"
+  },
+  {
+    "path": "WRITE.md",
+    "bytes": 3114,
+    "sha256": "2dadd17506dfdfc0547fbfaa5b64fa24dc17e586520b0c484414065c3461c7ba"
+  }
+]
