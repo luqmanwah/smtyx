@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://smtyx.io/schema/aoa-language-profile-0.1.json",
+  "title": "SMTYX-AOA Language Profile 0.1",
+  "allOf": [
+    {"$ref": "semantic-state.schema.json"},
+    {
+      "type": "object",
+      "properties": {
+        "intent": {
+          "enum": [
+            "READ", "WRITE", "ANALYZE", "VERIFY", "ROUTE", "EXECUTE", "REPORT",
+            "SYNC", "OBSERVE", "CONTROL", "PROPOSE", "TUNE", "HYDRATE", "RESOLVE"
+          ]
+        },
+        "object": {
+          "enum": [
+            "STATE", "DELTA", "TASK", "SESSION", "PROJECTION", "TOOL",
+            "DOCUMENT", "FILE", "PROJECT", "MEMORY", "CAPABILITY", "SOURCE",
+            "REPORT", "TUNING", "RESULT", "CONTEXT", "POLICY", "CHECKPOINT"
+          ]
+        },
+        "metadata": {
+          "type": "object",
+          "required": ["aoa_profile"],
+          "properties": {
+            "aoa_profile": {"const": "AOA/0.1"},
+            "domain": {"type": "string", "minLength": 1},
+            "project": {"type": "string", "minLength": 1},
+            "persona": {"type": "string", "minLength": 1},
+            "projection_id": {"type": "string", "minLength": 1},
+            "authority": {"type": "string", "minLength": 1},
+            "client_key": {"type": "string", "minLength": 1},
+            "memory_scopes": {
+              "type": "array",
+              "items": {"type": "string", "minLength": 1}
+            },
+            "source_priority": {
+              "type": "array",
+              "items": {"type": "string", "minLength": 1}
+            }
+          },
+          "additionalProperties": true
+        }
+      }
+    }
+  ]
+}
