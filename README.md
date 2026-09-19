@@ -1,5 +1,10 @@
 # SMTYX
 
+> **AOA stable language profile:** [SMTYX-AOA/0.1](docs/AOA_LANGUAGE_PROFILE.md) defines the
+> stable operational vocabulary used by AOA while SMTYX research continues. See
+> [STABILITY.md](STABILITY.md). The SMTYX 0.2 core and frozen byte-matrix 0.2.0 baseline
+> remain unchanged.
+
 > **Frozen byte-matrix runtime 0.2.0:** [source, exact reconstruction, and tests](runtimes/byte-matrix-0.2.0/).
 > This separately runnable component adds SMALL fingerprints, LARGE hierarchy, and
 > lossless `.smtyx` file reconstruction. See the [runtime guide](runtimes/README.md).
