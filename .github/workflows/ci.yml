@@ -1,0 +1,39 @@
+name: SMTYX conformance
+
+on:
+  push:
+    branches: [main, aoa-language-profile-0.1]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  semantic-sdk:
+    name: semantic-sdk (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.12", "3.13", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run semantic SDK and AOA profile tests
+        run: python -m unittest discover -s tests -v
+
+  frozen-byte-matrix:
+    name: frozen byte-matrix 0.2.0
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: runtimes/byte-matrix-0.2.0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Run frozen runtime tests
+        run: python -m unittest discover -s tests -v
