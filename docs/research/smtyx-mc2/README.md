@@ -4,16 +4,16 @@
 > **Encode less. Reconstruct more.**
 
 **Status:** Research  
-**Stage:** Experimental Concept  
+**Current research baseline:** v0.2  
 **License:** Apache-2.0  
-**Tag:** Research  
-**Initial Runtime Target:** Node.js
+**Primary tag:** Research  
+**Runtime family:** Node.js / ESM
 
----
+SMTYX-MC² is an experimental reconstructive representation runtime built around deterministic registered laws, compact residual state, shared context, and exact reconstruction.
 
-## E = MC² — The Branding
+The physics vocabulary is architecture branding inspired by relativity and quantum mechanics. It is **not** a claim that SMTYX implements physical relativity, quantum mechanics, or quantum computation.
 
-SMTYX-MC² borrows the visual language of Einstein's famous equation and turns it into an information-runtime mnemonic:
+## E = MC² — Branding Model
 
 ```text
 E  = ENERGY
@@ -21,43 +21,26 @@ M  = MASS
 C² = CODE × CONTEXT
 ```
 
-### **E = M × C²**
+In SMTYX-MC²:
 
-In SMTYX-MC² branding language:
+- **MASS** is the compact reconstructible residual carried by a packet.
+- **CODE** is the registered deterministic LAW / D index.
+- **CONTEXT** is the active REFERENCE FRAME + QUANTUM REALM.
+- **ENERGY** is the realized reconstructed state.
 
-> **A small MASS can reconstruct a much larger ENERGY state when the CODE and CONTEXT are already shared.**
-
-Or, more simply:
-
-> **Small Mass. Massive Meaning.**
-
-This is a branding analogy—not a physics equation and not a claim that SMTYX implements relativity or quantum mechanics.
-
----
-
-## What Is SMTYX-MC²?
-
-SMTYX-MC² is an experimental runtime concept for compact, deterministic, reconstructible representations using registered transformation laws and explicit shared context.
-
-The central idea is simple:
+The technical invariant remains:
 
 ```text
-RAW
- ↓ LORENTZ
-MASS
- ↓ CODE × CONTEXT
-INVERSE
- ↓
-ENERGY
- ↓ INVARIANT
-RAW AGAIN
+INVERSE(LORENTZ(X)) = X
 ```
 
-The goal is not merely to make data smaller. The goal is to preserve enough reconstructible state so that a deterministic runtime can rebuild the original representation exactly when the required shared laws and context are available.
+or:
 
----
+```text
+Λ_F⁻¹(Λ_F(X)) = X
+```
 
-## Core Vocabulary
+## Locked Vocabulary
 
 | Runtime role | SMTYX-MC² term |
 |---|---|
@@ -72,186 +55,94 @@ The goal is not merely to make data smaller. The goal is to preserve enough reco
 | Reconstructed full state | **ENERGY** |
 | Exact preservation condition | **INVARIANT** |
 
----
-
-## Conceptual Model
-
-Encoding:
+## v0.2 Architecture
 
 ```text
-M = Λ_F(X)
+                    SPACETIME
+                        │
+                 REFERENCE FRAME
+                        │
+                 QUANTUM REALM
+                  ├─ LAW D0
+                  ├─ LAW D1
+                  ├─ LAW D2
+                  ├─ LAW D3
+                  └─ ENTANGLEMENT
+                        │
+RAW X ───── LORENTZ ──► MASS
+                        │
+                    D index
+                        │
+                        ▼
+                     INVERSE
+                        │
+                        ▼
+                      ENERGY
+                        │
+                     INVARIANT
 ```
 
-Decoding:
+A LAW is registered by stable identity/index and exact version semantics. A MASS packet obtains meaning relative to the selected LAW and REFERENCE FRAME.
+
+## Current Research Result
+
+The v0.2 integration test processed 7 files (~12.44 MB total) with exact invariant success for all 7. Structured JSON/HTML samples selected `TEXT_DICT`; already-compressed ZIP files and unsuitable small inputs correctly fell back to `IDENTITY`.
+
+Current status:
 
 ```text
-E = Λ_F⁻¹(M)
+Exact reconstruction       PASS
+Registered LAW index       PASS
+REFERENCE FRAME binding    PASS
+Auto LAW selection         PASS
+TEXT_DICT reduction        PASS on tested structured inputs
+IDENTITY fallback          PASS
+Compact MASS packet        PASS
+Large-file streaming       OPEN
+LAW selection scalability  OPEN
+Measured memory profiling  OPEN
+Observer pre-selection     NEXT RESEARCH
 ```
 
-Exact reconstruction condition:
+## Three Research Implementations
+
+Three implementation snapshots are preserved under [programs/](./programs/):
+
+1. **Codex Version v0.1** — rigorous baseline with framing, manifests, fail-closed checks, and cost accounting.
+2. **AntyGravity Version v0.1** — rapid experimental implementation and conceptual lab.
+3. **Reference Runtime v0.2** — indexed LAW architecture, Smart Lorentz auto-selection, compact MASS packet, and benchmark suite.
+
+They are research snapshots, not three competing canonical specifications.
+
+## Research Documents
+
+- [Research Status v0.2](./RESEARCH_STATUS_v0.2.md)
+- [Architecture v0.2](./ARCHITECTURE_v0.2.md)
+- [Program Matrix](./PROGRAM_MATRIX.md)
+- [v0.2 Test Audit](./TEST_AUDIT_v0.2.md)
+- [Observer Roadmap v0.3](./ROADMAP_v0.3_OBSERVER.md)
+- [AntyGravity v0.2 process report](./reports/antigravity-v0.2-process-report.md)
+
+## Information-Theory Guardrail
+
+A small MASS does not make missing information disappear.
+
+A valid reduction may rely on shared deterministic side information:
 
 ```text
-Λ_F⁻¹(Λ_F(X)) = X
+MASS + CODE + CONTEXT -> ENERGY
 ```
 
-where:
+Therefore research must distinguish:
 
-- `X` is the original/raw state;
-- `M` is the compact reconstructible residual (**MASS**);
-- `F` is the active **REFERENCE FRAME**;
-- registered deterministic **LAW** nodes are resolved from the **QUANTUM REALM**;
-- `E` is the reconstructed state (**ENERGY**).
+- logical MASS payload;
+- packet/framing overhead;
+- shared LAW/realm cost;
+- amortized shared context cost;
+- actual end-to-end storage/transmission cost.
 
----
-
-## Runtime Flow
-
-```text
-                      SPACETIME
-                          │
-                  REFERENCE FRAME
-                          │
-                    QUANTUM REALM
-                 ┌────────┼────────┐
-               LAW D1   LAW D2   LAW D3
-                 ╲         │        ╱
-                     ENTANGLEMENT
-                          │
-                          ▼
-RAW X ─────── LORENTZ ──► MASS
-                          │
-                     CODE × CONTEXT
-                          │
-                          ▼
-                       INVERSE
-                          │
-                          ▼
-                       ENERGY
-                          │
-                       INVARIANT
-                          │
-                          ▼
-                       RAW AGAIN
-```
-
----
-
-## Recursive Dependency Idea
-
-A LAW can itself depend on deeper registered LAW nodes:
-
-```text
-D0
-↓
-B1 + D1
-     ↓
-     B2 + D2
-          ↓
-          ...
-             ↓
-      REGISTERED PRIMITIVE
-```
-
-The recursion must terminate at a registered primitive/root LAW. Infinite dependency regress is invalid.
-
----
-
-## Why MC²?
-
-The `MC²` identity is deliberately memorable:
-
-### **M — MASS**
-The compact residual state that travels.
-
-### **C — CODE**
-The registered deterministic LAW that tells the runtime how to transform or reconstruct the state.
-
-### **C — CONTEXT**
-The REFERENCE FRAME and shared runtime knowledge required to interpret the MASS correctly.
-
-### **E — ENERGY**
-The realized, reconstructed representation.
-
-So the branding can be read as:
-
-```text
-MASS + CODE + CONTEXT
-        ↓
-      ENERGY
-```
-
-Again, `E = MC²` here is a mnemonic identity for the architecture, not a physical equation.
-
----
-
-## Information-Theory Constraint
-
-A compact MASS does not intrinsically contain every bit of the reconstructed state. A small payload is valid only relative to shared registered rules and context.
-
-For example:
-
-```text
-11 | REFERENCE FRAME + LAW + QUANTUM REALM → a
-```
-
-This does **not** mean that an arbitrary alphabet is universally encoded in two bits.
-
-SMTYX-MC² must always distinguish:
-
-```text
-payload size
-shared dependency cost
-manifest cost
-amortized reconstruction cost
-```
-
-No fake compression claims.
-
----
-
-## Research Objectives
-
-The first runtime experiments should test:
-
-- deterministic encode/decode;
-- exact byte-for-byte round trip;
-- versioned LAW resolution;
-- dependency graph validation;
-- collision detection;
-- cross-process reproducibility;
-- explicit failure for missing or mismatched LAW versions;
-- honest accounting of shared dependency cost.
-
----
-
-## Implementation Direction
-
-Initial runtime target: **Node.js**.
-
-The first implementation is intended as a falsifiable research prototype, not a production specification.
-
----
-
-## Research Mantras
-
-> **Small Mass. Massive Meaning.**
-
-> **Encode less. Reconstruct more.**
-
-> **Mass in. Energy out. Invariant intact.**
-
----
-
-## Scientific Note
-
-The terminology is intentionally physics-inspired branding.
-
-Terms such as **LORENTZ**, **MASS**, **ENERGY**, **QUANTUM REALM**, and **ENTANGLEMENT** are architectural names. They do not assert physical equivalence with relativity, quantum mechanics, or quantum computation.
-
----
+No claim of universal compression is made.
 
 ## License
 
-This research concept is published under the repository's **Apache License 2.0**.
-
-See the repository root `LICENSE` file for the complete license text.
+The public research snapshot and program archives in this directory are published under the repository's **Apache License 2.0** unless a nested file explicitly states otherwise.
