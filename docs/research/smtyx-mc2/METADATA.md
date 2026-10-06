@@ -2,14 +2,25 @@
 
 - **Name:** SMTYX-MC²
 - **Status:** Research
-- **Classification:** Experimental Runtime Architecture
+- **Current research baseline:** v0.2
+- **Classification:** Experimental Reconstructive Representation Runtime
 - **Primary tag:** Research
-- **Runtime target:** Node.js
+- **Runtime:** Node.js ESM
 - **License:** Apache-2.0
 - **Repository:** luqmanwah/smtyx
-- **Publication scope:** Public concept only
+- **Publication scope:** Public research concept + implementation snapshots
 
-## Terminology Lock for This Research Snapshot
+## Branding
+
+```text
+E  = ENERGY
+M  = MASS
+C² = CODE × CONTEXT
+```
+
+Tagline: **Small Mass. Massive Meaning.**
+
+## Current Locked Terms
 
 ```text
 SPACETIME
@@ -24,6 +35,12 @@ ENERGY
 INVARIANT
 ```
 
+## Implementations Preserved
+
+- Codex Version v0.1
+- AntyGravity Version v0.1
+- SMTYX-MC² Reference Runtime v0.2
+
 ## Scientific Disclaimer
 
-The terminology is intentionally physics-inspired branding. Terms such as LORENTZ, MASS, ENERGY, QUANTUM REALM, and ENTANGLEMENT are not assertions of physical equivalence with relativity or quantum mechanics.
+The physics terminology is branding/internal architecture language. It does not establish physical equivalence with relativity, quantum mechanics, quantum entanglement, or quantum computation.
